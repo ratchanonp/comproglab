@@ -24,5 +24,5 @@ with open(sol_file, "r") as sols, open(exam_file, "r") as exams:
     q_hardest = [i for i, score in enumerate(question_score, 1) if score == min(question_score)]
     q_easiest = [i for i, score in enumerate(question_score, 1) if score == max(question_score)]
     
-    print(f"{' '.join(list(map(str, q_hardest)))} is the hardest question.")
-    print(f"{' '.join(list(map(str, q_easiest)))} is the easiest question.")
+    print(f"{' '.join(map(str, q_hardest))} is the hardest question.")
+    print(f"{' '.join(map(str, q_easiest))} is the easiest question.")
