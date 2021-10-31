@@ -11,8 +11,7 @@ with open(file) as file:
     # Check Vector in same size
     if len(vectors[0]) != len(vectors[1]):
         print("Incompatible size")
-        exit()
-    
-    # Dot Product vector
-    result = dot(vectors[0], vectors[1])
-    print(f"v1*v2 = {result}")
+    else:
+        # Dot Product vector
+        result = dot(vectors[0], vectors[1])
+        print(f"v1*v2 = {result}")
