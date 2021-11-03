@@ -37,6 +37,7 @@ def insert_item(items_list):
         location = int(input("Enter location that you want to insert:"))
         items_list.insert(location, itemToInsert)
         print("Item has been inserted")
+    
     return items_list
 
 # Remove Item function
@@ -83,3 +84,5 @@ while True:
         show_item(items)
     elif command == 6:
         break
+    else:
+        print("Invalid command")
