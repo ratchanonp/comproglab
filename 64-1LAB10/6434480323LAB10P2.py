@@ -11,6 +11,6 @@ with open(file, 'r') as f:
                 wordCount[word] += 1
             else:
                 wordCount[word] = 1
-    
+
     for word, count in wordCount.items():
         print(word, count)
