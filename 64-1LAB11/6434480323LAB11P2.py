@@ -88,7 +88,7 @@ def validation(stdID):
     if len(stdID) != 10:
         return False
     # Year 48 - 64
-    if int(stdID[:2]) <= 48 or int(stdID[:2]) >= 64:
+    if int(stdID[:2]) < 48 or int(stdID[:2]) > 64:
         return False
     # In Degree 3 or 7
     if int(stdID[2]) != 3 and int(stdID[2]) != 7:
