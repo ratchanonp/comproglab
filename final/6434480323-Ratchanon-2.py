@@ -4,7 +4,7 @@ ID : 6434480323
 Section : 2
 """
 
-provinces = list(map(str, input().split()))
+provinces = map(str, input("Provinces: ").split())
 patients = []
 for province in provinces:
     patient = int(input(f"patients in {province}: "))
